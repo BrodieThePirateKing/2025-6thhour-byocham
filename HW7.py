@@ -9,21 +9,39 @@ print("hello world")
 dict = {
     "thing" : "other",
     "thing2" : "other2",
-    "thing3" : "other3"
+    "thing3" : [1, 2, 3]
 }
 #3. Print the keys of the dictionary from #2.
-print(dict = "thing"
+print(dict.keys())
 #4. Print the values of the dictionary from #2
-
+print(dict.values())
 #5. Print one of the three numbers from the list by itself
-
+print("thing")
 #6. Using the update function, add a fourth key to the dictionary and give it a value.
-
+update_dict = dict.copy()
 #7. Print the entire dictionary from #2 with the updated key and value.
-
+print(update_dict)
 #8. Make a nested dictionary with three entries containing the name of another classmate and two other pieces of information
 #within each entry.
-
+sixth_hour_class = {
+    "student_1" : {
+    "name" : "Ally",
+    "grade" : 12,
+    "sports" : False,
+    },
+    "student_2": {
+    "name" : "Shane",
+    "grade" : 12,
+    "sports" : True,
+    },
+    "student_3": {
+    "name" : "Connor",
+    "grade" : 11,
+    "sports" : True,
+    },
+}
 #9. Print the names of all three classmates on the same line.
-
+print("student_1", "student_2", "student_3")
 #10. Use the pop function to remove one of the nested dictionaries inside and print the full dictionary from #8.
+sixth_hour_class.pop("student_1")
+print(sixth_hour_class)
